@@ -1,0 +1,19 @@
+.work-hero {
+  padding: 2em;
+}
+
+.work-hero .container {
+  border-bottom: 2px dashed var(--color-accent);
+}
+
+#work-item-1 img,
+#work-item-6 img,
+#work-item-8 img {
+  filter: invert(1);
+}
+
+@media (max-width: 900px) {
+  .work-hero {
+    padding: 8em 2em;
+  }
+}

@@ -1,0 +1,48 @@
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 100000;
+}
+
+.nav-item {
+  flex: 1;
+  padding: 0.25em 1em;
+  text-align: right;
+}
+
+.nav-item a {
+  position: relative;
+  font-size: 16px;
+  text-transform: none;
+  color: var(--color-accent);
+}
+
+.nav-item.active a::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom: 1.5px dashed var(--color-accent);
+}
+
+nav button {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+nav button.active {
+  opacity: 0.35;
+}

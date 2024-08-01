@@ -1,0 +1,144 @@
+.project-info .container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8em;
+  padding: 3.5em 2em;
+}
+
+.project-info-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-info-row:nth-child(2) p {
+  width: 400px;
+  text-align: justify;
+}
+
+.project-info-row p {
+  font-size: var(--font-small);
+}
+
+.about-more.project .container {
+  padding-left: 12em;
+}
+
+.about-more.project .container .about-more-col:nth-child(2) {
+  flex: 4;
+}
+
+.project-imgs-1 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.project-img {
+  height: 800px;
+}
+
+.project-imgs-2 .container {
+  display: flex;
+  gap: 2em;
+}
+
+.project-imgs-2 .container .project-img {
+  height: 600px;
+}
+
+.project-imgs-2 .container .project-img:nth-child(1) {
+  flex: 3;
+}
+
+.project-imgs-2 .container .project-img:nth-child(2) {
+  flex: 2;
+}
+
+.mob-imgs-1 {
+  width: 50%;
+  display: flex;
+  gap: 2em;
+}
+
+.mob-imgs-2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mob-imgs-2-wrapper {
+  width: 50%;
+  display: flex;
+  gap: 2em;
+}
+
+.mob-imgs-3 {
+  display: flex;
+}
+
+.mob-imgs-3-wrapper {
+  width: 50%;
+  display: flex;
+  gap: 2em;
+}
+
+.mob-imgs-3-wrapper .mob-img {
+  flex: 1;
+}
+
+.next-project-header {
+  margin-top: 8em;
+}
+
+.next-project-header .container h1:nth-child(2) {
+  text-align: right;
+}
+
+.about-hero-img.project-outro {
+  top: 0em !important;
+  margin-top: 0;
+}
+
+.about-hero-img.project-outro .about-hero-copy p {
+  font-size: 60px;
+  position: relative;
+}
+
+.about-hero-img.project-outro .about-hero-img-wrapper .work-item-img {
+  height: 500px;
+}
+
+@media (max-width: 900px) {
+  .project-info .container {
+    width: 100%;
+    padding: 3.5em 2em;
+  }
+
+  .project-info-row {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .about-more.project .container {
+    padding: 2em;
+  }
+
+  .project-imgs-2 .container {
+    flex-direction: column;
+  }
+
+  .mob-imgs-1,
+  .mob-imgs-2-wrapper,
+  .mob-imgs-3-wrapper {
+    width: 100%;
+  }
+
+  .no-img {
+    display: none;
+  }
+
+  .mob-imgs-3 {
+    gap: 2em;
+  }
+}
